@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0c0c0e">
-<meta name="description" content="Pedro Shakour — independent developer and founder. Started programming in C++ in 2002. The future has bugs. I'm working on it.">
+<meta name="description" content="Pedro Shakour — 20+ products launched, $1M+ cumulative revenue by 2024, one exit. C++ since 2002. Independent developer and founder.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pedro Shakour — Developer & Founder">
-<meta property="og:description" content="The future has bugs. I'm working on it. Selected projects, open source, and a little history.">
+<meta property="og:title" content="Pedro Shakour — Developer, Founder, 20+ Products">
+<meta property="og:description" content="20+ products launched. $1M+ cumulative revenue by 2024. Building in C++ since 2002.">
 <title>Pedro Shakour — Developer & Founder</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,37 +30,83 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.03;z
 @media(max-width:620px){.page{padding:39px 22px 35px}.overline{margin-bottom:36px}.intro{gap:15px}.portrait{width:78px;height:78px;flex-basis:78px}.identity h1{font-size:36px}.statement{margin-top:36px}.statement h2{font-size:39px}.statement .cursor{height:23px;width:8px}.bio{font-size:15px;margin-top:23px}.section{margin-top:65px}.project{grid-template-columns:44px minmax(0,1fr) 14px;gap:12px;padding:20px 0}.project .symbol{width:44px;height:44px}.project .meta{display:none}.project .arrow{font-size:15px}.repo .type{display:none}.proof{grid-template-columns:1fr;gap:22px}.foot{flex-direction:column;gap:10px}.heading{padding-bottom:17px}}
 @media(prefers-reduced-motion:reduce){.statement .cursor{animation:none}html{scroll-behavior:auto}*{transition:none!important}}
 .proof{align-items:center}.trust-embed{display:inline-flex;align-items:center;width:fit-content;max-width:100%;min-height:90px;border-radius:10px;transition:opacity .2s}.trust-embed:hover{opacity:.85}.trust-embed img{display:block;max-width:100%;width:220px;height:90px;object-fit:contain}
+
+/* Portfolio-first credibility strip: no startup-landing-page cards */
+.hero .milestones{display:grid;grid-template-columns:.92fr 1.38fr .72fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:38px}
+.milestone{padding:22px 16px 21px 0;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.milestone+.milestone{border-left:1px solid var(--line);padding-left:23px}
+.milestone strong{display:block;line-height:1.04;letter-spacing:-.078em;font-size:clamp(36px,5.3vw,57px);font-weight:750;font-variant-numeric:tabular-nums}
+.milestone strong span{color:var(--orange)}
+.milestone:nth-child(2) strong{color:var(--orange)}
+.milestone:nth-child(2) strong span{color:var(--ink)}
+.milestone small{display:block;font:11px/1.55 var(--mono);color:#a7a4a9;margin-top:10px}
+.hero .statement{margin-top:34px}
+.hero .statement h2{font-size:clamp(32px,5.4vw,57px);font-weight:650;letter-spacing:-.07em}
+.hero .bio{max-width:790px;margin-top:22px;font-size:15px;line-height:1.8}
+.hero .links{margin-top:21px}
+.project{cursor:pointer;position:relative}
+.project:focus-visible,.repo:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.project .meta{display:flex;gap:16px;align-items:center}
+.project .meta .domain{font-family:var(--mono);font-size:11px;color:#bbb5b1}
+.project:hover .meta .domain{color:var(--ink)}
+.project .meta .arrow{margin-top:0}
+.proof .exit{font-size:18px;letter-spacing:-.035em}
+.proof .exit-desc{line-height:1.6;max-width:270px}
+@media (max-width:620px){
+  .hero .milestones{grid-template-columns:1fr 1.2fr;gap:0;margin-top:29px}
+  .milestone{padding:17px 10px 16px 0}
+  .milestone+.milestone{padding-left:16px}
+  .milestone:nth-child(3){grid-column:span 2;border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .milestone strong{font-size:40px}
+  .milestone:nth-child(3){flex-direction:row;gap:16px;justify-content:flex-start;align-items:center}
+  .milestone:nth-child(3) small{margin:0}
+  .hero .statement{margin-top:29px}
+  .project .meta{display:flex;gap:5px}
+  .project .meta .domain{display:none}
+  .proof .exit-desc{max-width:none}
+}
+
 </style>
 </head><body>
 <main class="page">
-<div class="overline"><span class="sig">pedro<span aria-hidden="true">_</span></span><span class="right">/dev/profile · Dubai, UAE</span></div>
-<section aria-labelledby="name">
+<div class="overline"><span class="sig">pedro<span aria-hidden="true">_</span></span><span class="right">C++ since 2002 &nbsp;/&nbsp; Dubai</span></div>
+<section class="hero" aria-labelledby="name">
   <div class="intro">
     <img class="portrait" src="data:image/webp;base64,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" alt="Pedro Shakour" width="108" height="108">
-    <div class="identity"><div class="role">Independent developer · Founder</div><h1 id="name">Pedro Shakour</h1><div class="place">Based in Dubai. Building on the internet.</div></div>
+    <div class="identity">
+      <div class="role">Independent developer &amp; founder</div>
+      <h1 id="name">Pedro Shakour</h1>
+      <div class="place">Building products on the internet.</div>
+    </div>
+  </div>
+  <div class="milestones" aria-label="Track record">
+    <div class="milestone"><strong>20<span>+</span></strong><small>products launched</small></div>
+    <div class="milestone"><strong>$1M<span>+</span></strong><small>cumulative revenue by 2024</small></div>
+    <div class="milestone"><strong>1</strong><small>exit in 2024</small></div>
   </div>
   <div class="statement"><h2>The future has <span>bugs.</span><br>I'm working on it<span class="cursor" aria-hidden="true"></span></h2></div>
-  <p class="bio">I wrote my first lines of <strong>C++ in 2002</strong>. Since then I've moved between photography, trading and software. Today I build AI tools, trading infrastructure and independent products — from idea to deployed code.</p>
-  <div class="links"><a href="https://github.com/Pedroshakoor" target="_blank" rel="noopener noreferrer"><span class="mark">↗</span> GitHub</a><a href="https://x.com/pedroshakour" target="_blank" rel="noopener noreferrer"><span class="mark">↗</span> X / @pedroshakour</a><a href="https://trustmrr.com/startup/tradingtool" target="_blank" rel="noopener noreferrer"><span class="mark">↗</span> TrustMRR</a></div>
+  <p class="bio">I started writing <strong>C++ in 2002</strong> and earned my first money on the internet in <strong>2020</strong>. I build and launch independent products across AI, developer tools and trading technology.</p>
+  <div class="links">
+    <a href="https://github.com/Pedroshakoor" target="_blank" rel="noopener noreferrer"><span class="mark">↗</span> GitHub</a>
+    <a href="https://x.com/pedroshakour" target="_blank" rel="noopener noreferrer"><span class="mark">↗</span> X / @pedroshakour</a>
+    <a href="https://trustmrr.com/startup/tradingtool" target="_blank" rel="noopener noreferrer"><span class="mark">↗</span> Revenue record</a>
+  </div>
 </section>
-<section class="section" aria-labelledby="selected"><div class="heading"><span class="section-num">01 /</span><h2 id="selected">Selected work</h2><span class="count">05 projects</span></div>
+<section class="section" aria-labelledby="selected"><div class="heading"><span class="section-num">01 /</span><h2 id="selected">Selected work</h2><span class="count">04 projects</span></div>
   <a class="project" href="https://github.com/Pedroshakoor/grok-build-ios" target="_blank" rel="noopener noreferrer">
     <span class="symbol grok"><svg viewBox="0 0 562 545" aria-label="Grok logo" role="img"><g fill="#000"><path d="M410,104 L393,93 L375,84 L344,73 L304,66 L273,66 L255,68 L233,73 L200,85 L186,92 L163,107 L135,132 L113,160 L99,185 L86,220 L80,250 L80,303 L85,329 L101,377 L102,392 L99,412 L88,438 L75,457 L60,475 L20,517 L2,539 L177,382 L158,360 L144,335 L137,315 L133,292 L134,255 L143,222 L156,196 L174,172 L191,156 L205,146 L223,136 L241,129 L273,122 L306,122 L331,127 L348,133Z"/><path d="M559,5 L220,346 L403,210 L411,206 L417,206 L426,210 L432,219 L441,252 L443,277 L441,301 L434,328 L420,357 L407,375 L378,402 L364,411 L334,424 L310,429 L281,430 L253,426 L229,418 L167,447 L202,467 L232,478 L268,485 L311,485 L335,481 L353,476 L372,469 L390,460 L416,443 L445,416 L463,393 L481,360 L491,332 L496,308 L498,290 L498,263 L495,239 L486,196 L484,168 L485,148 L489,126 L498,100 L509,78 L530,45Z"/></g></svg></span>
-    <span><h3>Grok Build for iPhone</h3><p>iOS remote for a Mac-hosted Grok coding agent over ACP.</p></span><span class="meta">SwiftUI / GitHub <span class="arrow">↗</span></span>
+    <span><h3>Grok Build for iPhone</h3><p>iOS remote for a Mac-hosted Grok coding agent over ACP.</p></span><span class="meta"><span class="domain">GitHub / source</span><span class="arrow">↗</span></span>
   </a>
   <a class="project" href="https://getrecall.app" target="_blank" rel="noopener noreferrer">
     <span class="symbol"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Recall icon"><defs><linearGradient id="recallgrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a2750"/><stop offset="1" stop-color="#4d8df5"/></linearGradient></defs><rect width="512" height="512" rx="110" fill="url(#recallgrad)"/><circle cx="256" cy="220" r="96" fill="#e7efff" opacity=".9"/><path d="M176 332c26 28 56 42 80 42s54-14 80-42" fill="none" stroke="#e7efff" stroke-width="28" stroke-linecap="round"/></svg></span>
-    <span><h3>Recall</h3><p>Memory and personal context, built into an AI product.</p></span><span class="meta">AI / Web <span class="arrow">↗</span></span>
+    <span><h3>Recall</h3><p>Memory and personal context, built into an AI product.</p></span><span class="meta"><span class="domain">getrecall.app</span><span class="arrow">↗</span></span>
   </a>
   <a class="project" href="https://raqibai.tech" target="_blank" rel="noopener noreferrer">
-    <span class="symbol raqib">رقيب</span><span><h3>Raqib</h3><p>Human-in-the-loop AML workflow intelligence for financial institutions.</p></span><span class="meta">Compliance / Web <span class="arrow">↗</span></span>
+    <span class="symbol raqib">رقيب</span><span><h3>Raqib</h3><p>Human-in-the-loop AML workflow intelligence for financial institutions.</p></span><span class="meta"><span class="domain">raqibai.tech</span><span class="arrow">↗</span></span>
   </a>
   <a class="project" href="https://rnme.com" target="_blank" rel="noopener noreferrer">
     <span class="symbol"><svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RNME icon"><rect width="180" height="180" rx="36" fill="#0B0B0B"/><text x="28" y="110" font-size="56" font-family="monospace" font-weight="700" fill="#fff" letter-spacing="2">RNME</text><circle cx="150" cy="58" r="8" fill="#F97316"/></svg></span>
-    <span><h3>RNME</h3><p>Earn rewards for sponsor attention while trading.</p></span><span class="meta">Adtech / Web <span class="arrow">↗</span></span>
-  </a>
-  <a class="project" href="https://rnme.com" target="_blank" rel="noopener noreferrer">
-    <span class="symbol mt5">MT5</span><span><h3>RNME / MetaTrader 5</h3><p>Trading-platform integration for the RNME ecosystem.</p></span><span class="meta">MT5 / Integration <span class="arrow">↗</span></span>
+    <span><h3>RNME</h3><p>Earn rewards for sponsor attention while trading.</p></span><span class="meta"><span class="domain">rnme.com</span><span class="arrow">↗</span></span>
   </a>
 </section>
 <section class="section" aria-labelledby="opensource"><div class="heading"><span class="section-num">02 /</span><h2 id="opensource">Open source</h2><span class="count">04 repositories</span></div>
@@ -70,7 +116,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.03;z
   <a class="repo" href="https://github.com/Pedroshakoor/Devflow" target="_blank" rel="noopener noreferrer"><span><h3>Devflow</h3><p>Developer workflow tools and local automation.</p></span><span class="type">TypeScript / MCP <span>↗</span></span></a>
 </section>
 <section class="section" aria-labelledby="track"><div class="heading"><span class="section-num">03 /</span><h2 id="track">Track record</h2></div>
-  <div class="proof"><div><div class="exit">1 exit <span>↗</span></div><div class="exit-desc">2024 · software business</div></div>
+  <div class="proof"><div><div class="exit">Built to ship. <span>Built to last.</span></div><div class="exit-desc">The badge shows recorded revenue from one business. The $1M+ total spans multiple products.</div></div>
   <a class="trust-embed" href="https://trustmrr.com/startup/tradingtool" target="_blank" rel="noopener noreferrer" aria-label="View verified revenue on TrustMRR"><img src="https://trustmrr.com/api/embed/tradingtool?format=svg&amp;theme=dark" alt="TrustMRR verified revenue badge" width="220" height="90" loading="lazy" decoding="async"></a></div>
 </section>
 <footer class="foot"><span>© <span id="year">2026</span> Pedro Shakour</span><span><a href="https://github.com/Pedroshakoor" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;·&nbsp; <a href="https://x.com/pedroshakour" target="_blank" rel="noopener noreferrer">X</a></span></footer>
